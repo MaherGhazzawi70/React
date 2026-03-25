@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Error  from './pages/Error';
 import Contact  from './pages/Contact';
-import "./styles/style.css"
+import "./styles/style.scss"
 const App = () => {
   return (
    <BrowserRouter>

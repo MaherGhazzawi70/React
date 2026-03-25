@@ -23,6 +23,28 @@ a{
     text-decoration: none;
     font-size: 1.2rem;
 }
-li.active{
+.active{
+ background: plum;
+ padding: 10px;
+ color: white;
+ transition: 0.3s ease;
+ animation: anim 0.5s forwards;
 
+ @keyframes anim {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+ }
 }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// .countries h1{
+//     text-align: center;
+//     color: red;
+// }

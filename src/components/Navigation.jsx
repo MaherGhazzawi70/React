@@ -1,19 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './_settings.scss';
+import '../styles/style.css';
 
 
 const Navigation = () => {
     return (
-       <div className="navigation">
+       <div>
         <ul>
-            <NavLink to="/">
+            <NavLink to="/" className={(nav) => (nav.isActive ? "active" : "")}>
             <li>Startseite</li>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/about" className={(nav) => (nav.isActive ? "active" : "")}>
             <li>über uns</li>
             </NavLink>
-            <NavLink to="/contact">
+            <NavLink to="/contact" className={(nav) => (nav.isActive ? "active" : "")}>
             <li>contact</li>
             </NavLink>
         </ul>
